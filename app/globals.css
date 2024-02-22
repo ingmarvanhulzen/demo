@@ -16,3 +16,16 @@ p {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
 }
+
+.animate-bottom-to-top {
+  animation: bottom-to-top 500ms linear both;
+}
+
+@keyframes bottom-to-top {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0),
+  }
+}
