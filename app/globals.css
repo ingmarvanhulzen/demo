@@ -33,6 +33,7 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  height: 100%;
 }
 
 /* Grid should be relative so the pseudo-element is absolute to there grid item and ignore overlaying content */
