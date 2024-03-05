@@ -45,8 +45,14 @@ main {
 
 /* Some basic grid item with a default value for --size */
 .grid-item::before {
-  --size: 1rem;
+  --size: calc(1rem * var(--scroll-top, 1));
   content: "";
   position: absolute;
   inset: var(--size);
+  border-radius: var(--size);
+  box-shadow: 
+        calc(-1 * var(--size)) calc(-1 * var(--size)) 0 var(--size), /* top-left -1rem -1rem 0 1rem */
+        var(--size) calc(-1 * var(--size)) 0 var(--size), /* top-right 1rem -1rem 0 1rem */
+        var(--size) var(--size) 0 var(--size), /* bottom-right 1rem 1rem 0 1rem */
+        calc(-1 * var(--size)) var(--size) 0 var(--size); /* bottom-left -1rem 1rem 0 1rem */
 }
