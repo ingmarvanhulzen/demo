@@ -5,7 +5,7 @@ html, body {
 
 /* The main viewport */
 main {
-  min-height: 100vh;
+  max-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -16,8 +16,9 @@ main {
 
 /* Here we create a fixed window so the image and grid stays in place when we scroll */
 .fixed {
-  position: fixed;
-  inset: 0;
+  position: sticky;
+  height: 100vh;
+  top: 0;
 }
 
 /* Scale image to full screen and scale properly */
