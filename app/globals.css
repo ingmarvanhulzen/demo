@@ -4,7 +4,7 @@ html, body {
 }
 
 /* The main viewport */
-.container {
+main {
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ html, body {
 }
 
 /* Here we create a fixed window so the image and grid stays in place when we scroll */
-.wrapper {
+.fixed {
   position: fixed;
   inset: 0;
 }

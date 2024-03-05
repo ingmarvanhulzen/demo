@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="container">
+    <main>
       <div className="section">
-        <div className="wrapper">
+        <div className="fixed">
           {/* I use picsum for a random image but you could use youre own image here */}
           <img
             src="https://picsum.photos/seed/100/1920/1080"
@@ -17,6 +17,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
